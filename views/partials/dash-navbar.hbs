@@ -1,0 +1,69 @@
+<div class="w-full h-20 flex justify-between pl-20 fixed backColor border-bottom z-10" id="color">
+  <div class="flex items-center ">
+    <a href="/dashboard" class="flex items-center">
+      <img src="/icons/logo.png" alt="logo" class="w-12" />
+      <div class="text-2xl ml-2 font-bold">Kito<span class="text-violet-700">bek</span></div>
+    </a>
+  </div>
+  <div class="flex items-center pr-10">
+    <div class="m-2 text-xl p-1 ">
+      <div class="search-bar-container active">
+        <a href="#"><i class="bi bi-search magnifier"></i></a>
+        <input type="text" class="input" placeholder="Search ..." />
+        <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" alt="mic-icon"
+          class="mic-icon" />
+      </div>
+
+    </div>
+
+    <div class="m-2 text-xl p-1">
+      <img src="/icons/sun.png" id="icon">
+    </div>
+
+
+
+    <div>
+
+    </div>
+
+
+    <div class="action">
+      <div class="profile" onclick="menuToggle();">
+        <img src="{{ProfilePhoto}}" alt="google-photos" class="w-12 h-12 rounded-full cursor-pointer">
+      </div>
+      <div class="menu">
+        <div class="flex items-center py-4">
+          <img src="{{ProfilePhoto}}" alt="google-img" class="w-10 h-10 rounded-full">
+          <div class="ml-2">
+            <p>{{userFull}}</p>
+            <h5 class="email-text">{{userEmail}}</h5>
+          </div>
+        </div>
+
+
+        <ul class="text-lg cursor-pointer">
+          <li>
+            <i class="bi bi-gear-wide mx-2"></i>
+            <p id="setModalBtn">Sozlamalar</p>
+          </li>
+          <li>
+            <i class="bi bi-bookmark-heart mx-2"></i> <a href="/liked">Sevimli kitoblar</a>
+          </li>
+          <li>
+            <i class="bi bi-box-arrow-right mx-2"></i> <a href="/logout">Hisobdan chiqish</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+  function menuToggle() {
+    const toggleMenu = document.querySelector(".menu");
+    toggleMenu.classList.toggle("active");
+  }
+
+</script>
