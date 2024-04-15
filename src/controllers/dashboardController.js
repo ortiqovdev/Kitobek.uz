@@ -27,6 +27,15 @@ exports.allChat = async (req, res) => {
         userEmail: req.user.email,
     });
 };
+exports.allBooks = async (req, res) => {
+
+    res.render('dashboard/all-books',  {
+        title: "Kitobek | Barcha kitoblar",
+        ProfilePhoto: req.user.profileImage,
+        userFull: req.user.displayName,
+        userEmail: req.user.email,
+    });
+};
 // exports.countUsers = async () => {
 //     try {
 //         const count = await User.countDocuments(); 
