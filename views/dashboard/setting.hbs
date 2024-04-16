@@ -1,0 +1,47 @@
+{{!-- Navbar --}}
+{{>dash-navbar}}
+
+<div class="sidebarPadding2 homeColor  h-screen">
+    <div class="set-style flex flex-col rounded-md p-5">
+        <p class="text-4xl items-center mx-auto">Sozlamalar</p>
+
+        <div class="line2 pt-3 mx-auto">
+
+        </div>
+
+        <div class="py-3 flex justify-around">
+            <div>
+                <img src="{{ProfilePhoto}}" class="w-52">
+            </div>
+            <div>
+                <div >
+                    <p>Foydalanuvchi nomi:</p>
+
+                    <p>{{userFull}}</p>
+                </div>
+                <div >
+                    <p>Ism:</p>
+                           <input type="text" placeholder="Ism" value="{{firstName}}"
+                        class="p-2 w-full rounded-sm homeColor outline-none mt-3">
+
+                </div>
+                <div >
+                    <p>Familya:</p>
+                    <input type="text" placeholder="Familya" value="{{lastName}}"
+                        class="p-2 w-full rounded-sm homeColor outline-none mt-3">
+
+                    {{!-- <p>{{lastName}}</p> --}}
+                </div>
+                <div >
+                    <p>Email:</p>
+                                <input type="text" placeholder="Email" value="{{userEmail}}"
+                        class="p-2 w-full rounded-sm homeColor outline-none mt-3">
+                </div>
+                <a href="#"><button
+                        class="button-color w-auto p-2 mx-2  rounded-md drop-shadow-lg">Saqlash</button></a>
+
+            </div>
+
+        </div>
+    </div>
+</div>

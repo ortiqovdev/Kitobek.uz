@@ -36,6 +36,17 @@ exports.allBooks = async (req, res) => {
         userEmail: req.user.email,
     });
 };
+exports.setting = async (req, res) => {
+
+    res.render('dashboard/setting',  {
+        title: "Kitobek | Sozlamalar",
+        ProfilePhoto: req.user.profileImage,
+        userFull: req.user.displayName,
+        userEmail: req.user.email,
+        firstName:req.user.firstName,
+        lastName:req.user.lastName
+    });
+};
 // exports.countUsers = async () => {
 //     try {
 //         const count = await User.countDocuments(); 
