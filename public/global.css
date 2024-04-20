@@ -368,3 +368,7 @@ Profile popover .action {
 .border-all {
   border: 1px solid var(--border-dark);
 }
+
+@media screen {
+  
+}
