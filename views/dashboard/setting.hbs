@@ -1,47 +1,65 @@
 {{!-- Navbar --}}
 {{>dash-navbar}}
 
-<div class="sidebarPadding2 homeColor  h-screen">
+<div class="sidebarPadding2 homeColor ">
     <div class="set-style flex flex-col rounded-md p-5">
         <p class="text-4xl items-center mx-auto">Sozlamalar</p>
 
-        <div class="line2 pt-3 mx-auto">
+        <div class="line2 py-3 mx-auto">
 
         </div>
 
-        <div class="py-3 flex justify-around">
-            <div>
+        <div class="py-10 flex justify-around items-center">
+            <div class="justify-center p-5">
                 <img src="{{ProfilePhoto}}" class="w-52">
             </div>
-            <div>
-                <div >
+            <div class="flex flex-col items-start p-5 text-xl">
+                <div class="flex py-2">
                     <p>Foydalanuvchi nomi:</p>
 
-                    <p>{{userFull}}</p>
+                    <p class="mx-2">{{userFull}}</p>
                 </div>
-                <div >
+                <div>
                     <p>Ism:</p>
-                           <input type="text" placeholder="Ism" value="{{firstName}}"
-                        class="p-2 w-full rounded-sm homeColor outline-none mt-3">
+                    <input type="text" placeholder="Ism" value="{{firstName}}"
+                        class="p-2 rounded-sm homeColor outline-none mb-3 boxShadow w-80">
 
                 </div>
-                <div >
+                <div>
                     <p>Familya:</p>
                     <input type="text" placeholder="Familya" value="{{lastName}}"
-                        class="p-2 w-full rounded-sm homeColor outline-none mt-3">
+                        class="p-2 w-80 rounded-sm homeColor outline-none mb-3">
 
-                    {{!-- <p>{{lastName}}</p> --}}
                 </div>
-                <div >
+                <div>
                     <p>Email:</p>
-                                <input type="text" placeholder="Email" value="{{userEmail}}"
-                        class="p-2 w-full rounded-sm homeColor outline-none mt-3">
+                    <input type="text" placeholder="Email" value="{{userEmail}}"
+                        class="p-2 w-80 rounded-sm homeColor outline-none mb-3">
                 </div>
                 <a href="#"><button
-                        class="button-color w-auto p-2 mx-2  rounded-md drop-shadow-lg">Saqlash</button></a>
+                        class="button-color w-auto p-2 m-2  rounded-md drop-shadow-lg ml-64">Saqlash</button></a>
 
             </div>
 
         </div>
+        <div class="line2 py-3 mx-auto">
+
+        </div>
+
+        <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos id molestiae rerum ipsam reprehenderit, aperiam
+            voluptatem quis earum molestias consectetur tempore velit, deleniti aliquam, nam qui ducimus esse quasi
+            veritatis atque voluptate? Corrupti quis sunt labore doloremque necessitatibus, fugiat harum error rerum
+            expedita, iure nemo, fuga dicta perspiciatis consequatur porro ut odit fugit magni tenetur. Deserunt quae
+            magnam expedita vel voluptates aspernatur harum, corrupti quia tempore dolorem. Facilis expedita eligendi
+            consequatur ea veniam natus tempore, sed saepe suscipit sint sit laudantium nemo, earum voluptates
+            cupiditate officiis beatae, tenetur ipsam ullam ut fugiat quisquam corporis neque! Cum ad laborum, corporis
+            molestiae ducimus ipsa voluptatem ullam expedita vel sequi pariatur voluptatibus sit iure tenetur recusandae
+            officia eius sunt! Nihil, quae hic. Dicta, omnis. Accusamus doloribus voluptas hic iste recusandae, quasi
+            error libero cum molestias, placeat ex maiores modi rem dignissimos odio natus eligendi sit fuga? Modi
+            itaque illo, excepturi ab ullam a delectus, necessitatibus aspernatur deserunt explicabo consequuntur eius
+            eligendi saepe aperiam ducimus sed perferendis harum ad in architecto! Sequi sint earum perspiciatis, porro
+            soluta praesentium alias consectetur dolor illo inventore iste iure. Repudiandae quisquam veritatis
+            officiis! Ipsum omnis ab quam velit quasi error consequuntur a, quis enim quos, recusandae tempore nisi.</p>
     </div>
+
 </div>
