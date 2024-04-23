@@ -40,13 +40,26 @@ router.get('/auth/google',
   passport.authenticate("google", { scope: ["email", "profile"] })
 );
 
-router.get(
-  "/google/callback",
-  passport.authenticate("google", {
-    failureRedirect: "/login",
-    successRedirect: "/dashboard",
-  })
-);
+const admin = User.findOne({ email: 'akmalbekortiqovv@google.com' });
+
+// if (admin) {
+//   router.get('/admin', (req, res) => {
+//     res.render('dashboard/admin', {
+//       title: "Kitobek | Barcha kitoblar",
+//       ProfilePhoto: req.user.profileImage,
+//       userFull: req.user.displayName,
+//       userEmail: req.user.email,
+//     });
+//   });
+// }else{
+  router.get("/google/callback",
+      passport.authenticate("google", {
+        failureRedirect: "/login",
+        successRedirect: "/dashboard",
+      })
+  );
+// }
+
 
 router.get('/logout', (req, res) => {
   req.session.destroy(error => {
